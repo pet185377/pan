@@ -1,0 +1,89 @@
+Tue Feb 19 17:49:38 2019  parent process start
+Tue Feb 19 17:49:38 2019  child process start
+Tue Feb 19 17:49:54 2019  parent process start
+Tue Feb 19 17:49:54 2019  child process start
+Tue Feb 19 17:50:11 2019  与客户端new_fd=6建立连接
+欢迎进入 HORIZON 私有协议网盘系统
+等待客户端登陆命令中
+客户端6退出
+客户端6连接时间为1秒
+Tue Feb 19 18:04:21 2019  parent process start
+Tue Feb 19 18:04:21 2019  child process start
+Tue Feb 19 18:04:44 2019  与客户端new_fd=6建立连接
+欢迎进入 HORIZON 私有协议网盘系统
+等待客户端登陆命令中
+执行的数据库查询命令为:
+select user,salt,ciphertext from User where user='haha'
+Connected...
+Query made...
+获取查询到的信息
+user     salt     ciphertext
+haha     ivGmSxO7 ivRPImpDzuCPs
+用户haha存在
+用户haha密码输入错误
+等待客户端登陆命令中
+执行的数据库查询命令为:
+select user,salt,ciphertext from User where user='haha'
+Connected...
+Query made...
+获取查询到的信息
+user     salt     ciphertext
+haha     ivGmSxO7 ivRPImpDzuCPs
+用户haha存在
+密码验证成功
+Tue Feb 19 18:04:57 2019  等待网盘命令中
+Tue Feb 19 18:04:59 2019  接收0号任务成功
+Tue Feb 19 18:04:59 2019  客户端new_fd=6退出
+客户端6连接时间为15秒
+Tue Feb 19 18:05:01 2019  与客户端new_fd=12建立连接
+欢迎进入 HORIZON 私有协议网盘系统
+等待客户端登陆命令中
+执行的数据库查询命令为:
+select user,salt,ciphertext from User where user='poco'
+Connected...
+Query made...
+获取查询到的信息
+user     salt     ciphertext
+poco     J15etpz1 J1rkhIAKiPG3M
+用户poco存在
+密码验证成功
+Tue Feb 19 18:05:08 2019  等待网盘命令中
+Tue Feb 19 18:05:09 2019  接收2号任务成功
+执行的数据库查询命令为:
+select name,type,md5value from Data where belong='poco' and procode=0
+Connected...
+Query made...
+file     f        c5d6b2dad379b3a63513192f153f4741 
+dir1     d        0        
+dir2     d        0        
+ls结果发送完毕
+用户ls命令已完成
+Tue Feb 19 18:05:09 2019  等待网盘命令中
+Tue Feb 19 18:05:15 2019  接收1号任务成功
+用户给出路径为 dir1
+执行的数据库查询命令为:
+select code from Data where type='d' and name='dir1' and procode=0
+Connected...
+Query made...
+dir1的code=221
+当前工作路径层级code:0 221 
+当前用户工作路径/home/horizon/pan/data/dir1上一次cd操作后的工作路径/home/horizon/pan/data
+用户cd命令已完成
+Tue Feb 19 18:05:15 2019  等待网盘命令中
+Tue Feb 19 18:05:15 2019  接收2号任务成功
+执行的数据库查询命令为:
+select name,type,md5value from Data where belong='poco' and procode=221
+Connected...
+Query made...
+file3    f        aa3f5bb8c988fa9b75a1cdb1dc4d93fc 
+ls结果发送完毕
+用户ls命令已完成
+Tue Feb 19 18:05:15 2019  等待网盘命令中
+Tue Feb 19 18:05:17 2019  接收0号任务成功
+Tue Feb 19 18:05:17 2019  客户端new_fd=12退出
+客户端12连接时间为16秒
+Tue Feb 19 18:05:36 2019  与客户端new_fd=19建立连接
+欢迎进入 HORIZON 私有协议网盘系统
+等待客户端登陆命令中
+客户端19退出
+客户端19连接时间为3秒
